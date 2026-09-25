@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-container": "#fffbff",
+          "surface-cream": "#FEF9EE",
+          "border-gold-subtle": "rgba(217, 119, 6, 0.18)",
+          "error": "#ba1a1a",
+          "on-primary-fixed": "#2f1500",
+          "surface-container": "#f0eee8",
+          "tertiary-fixed": "#dce2f7",
+          "yelp-red": "#D32323",
+          "surface-bright": "#fbf9f3",
+          "primary-fixed": "#ffdcc3",
+          "surface-tint": "#904d00",
+          "on-error": "#ffffff",
+          "charcoal-muted": "#4B5563",
+          "secondary-container": "#d9352f",
+          "primary": "#8d4b00",
+          "surface-card": "#FFFFFF",
+          "secondary-fixed": "#ffdad6",
+          "secondary-fixed-dim": "#ffb4ab",
+          "background": "#fbf9f3",
+          "tertiary-container": "#6e7487",
+          "on-secondary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "tertiary-fixed-dim": "#c0c6db",
+          "on-secondary-fixed": "#410002",
+          "saffron-deep": "#B45309",
+          "surface-variant": "#e4e2dd",
+          "border-gold": "#F3E1B9",
+          "primary-fixed-dim": "#ffb77d",
+          "inverse-primary": "#ffb77d",
+          "on-primary": "#ffffff",
+          "on-tertiary-fixed-variant": "#404758",
+          "on-surface": "#1b1c19",
+          "surface-dim": "#dbdad4",
+          "surface": "#fbf9f3",
+          "outline": "#887364",
+          "surface-container-high": "#eae8e2",
+          "on-secondary-fixed-variant": "#93000b",
+          "chili-crimson-deep": "#991B1B",
+          "outline-variant": "#dbc2b0",
+          "surface-container-highest": "#e4e2dd",
+          "surface-container-low": "#f5f3ee",
+          "on-tertiary-container": "#fefcff",
+          "on-surface-variant": "#554336",
+          "on-tertiary": "#ffffff",
+          "on-primary-fixed-variant": "#6e3900",
+          "tertiary": "#555c6e",
+          "error-container": "#ffdad6",
+          "inverse-surface": "#30312d",
+          "on-error-container": "#93000a",
+          "secondary": "#b6191a",
+          "on-primary-container": "#fffbff",
+          "on-background": "#1b1c19",
+          "star-gold": "#F59E0B",
+          "primary-container": "#b15f00",
+          "charcoal-body": "#1F2937",
+          "on-tertiary-fixed": "#141b2b",
+          "google-blue": "#4285F4",
+          "saffron-bright": "#E59819",
+          "inverse-on-surface": "#f2f1eb"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "gutter-sm": "1rem",
+          "space-xl": "2.5rem",
+          "margin-mobile": "1rem",
+          "space-md": "1rem",
+          "margin": "2rem",
+          "gutter": "1.5rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "display-hero-mobile": [
+            "Playfair Display"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "label-caps": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Playfair Display"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "title-md": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-caps": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.12em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between selection:bg-primary-fixed selection:text-on-primary-fixed"><main class="w-full bg-surface flex-grow"><div class="max-w-[840px] mx-auto px-margin-mobile md:px-margin py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Ambient Crest & Culinary Welcome Header -->
+<section class="relative overflow-hidden bg-surface-cream rounded-3xl p-space-md shadow-xl shadow-saffron-deep/5 mb-space-md text-center"><div class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-saffron-bright/10 blur-3xl pointer-events-none"></div><div class="absolute -bottom-24 -left-24 w-64 h-64 rounded-full bg-secondary/5 blur-2xl pointer-events-none"></div><div class="relative z-10 flex flex-col items-center max-w-sm mx-auto"><div class="mb-space-sm flex flex-col items-center"><img alt="The Yellow Chilli Danville" class="h-14 w-auto max-w-[240px] object-contain drop-shadow-sm mb-space-xs" src="https://lh3.googleusercontent.com/aida/AEtjO1XaLdMkPxbZeEgyy_DxfqOimxcmWpsF9hKRbmAWqhnWXnOiysXYM5xp8geM4Eejj49wl69crc5pYZ58OFj5w1-JBlbiMfBVtpdS0XXVAQ7myYo9irRGnii4SgYAtPSYXu2sFgdhs9dLSimkBLDkLrR7hadVy5U5Nz7CAw64Cmamr3hrn0z2a6Iaiu20jTGs0MIokoYlIglBwL18nKjE565SFZz4itYWIj_GUF-7r2tT0BaLVUbleTAPa6c"/><div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-primary-fixed/60 text-on-primary-fixed font-label-caps text-label-caps uppercase tracking-wider"><span class="material-symbols-outlined text-[14px] text-saffron-deep" style="font-variation-settings: 'FILL' 1;">location_on</span><span>The Rose Garden • Danville, CA</span></div></div><h1 class="font-headline-md text-headline-md text-charcoal-body tracking-tight mb-space-xs">Thank You for Dining with Us</h1><p class="font-body-md text-body-md text-charcoal-muted leading-relaxed mb-space-sm">Crafted under the visionary artistry of <span class="text-saffron-deep font-semibold">Master Chef Sanjeev Kapoor</span>. We hope you had an unforgettable experience!</p><div class="flex flex-wrap items-center justify-center gap-space-xs"><span class="px-2.5 py-1 rounded-full bg-surface-card text-saffron-deep font-label-md text-label-md shadow-sm flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-star-gold" style="font-variation-settings: 'FILL' 1;">award_star</span><span>OpenTable Diners' Choice</span></span><span class="px-2.5 py-1 rounded-full bg-surface-card text-charcoal-muted font-label-md text-label-md shadow-sm flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-saffron-deep">restaurant</span><span>Modern Indian Haute Cuisine</span></span></div></div></section>
+<!-- Interactive 5-Star Experience Evaluator -->
+<!-- High-Impact Public Review Cards (Google & Yelp) -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-space-md mb-space-lg">
+<!-- Google Card -->
+<div class="bg-surface-card rounded-2xl p-space-md sm:p-space-lg shadow-xl shadow-black/[0.04] flex flex-col justify-between relative group hover:shadow-2xl hover:shadow-saffron-deep/10 transition-all duration-300">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center shadow-inner">
+<!-- Multicolored Google G Icon -->
+<svg class="w-7 h-7" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path>
+</svg>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-caps text-label-caps text-charcoal-muted uppercase">
+            30 Sec Quick Tap
+          </span>
+</div>
+<div class="mb-space-md">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-headline-sm text-headline-sm text-charcoal-body">Review on Google</span>
+</div>
+<p class="font-body-md text-body-md text-charcoal-muted leading-relaxed">
+            Help local East Bay diners discover Master Chef Sanjeev Kapoor's signature dishes in Danville.
+          </p>
+</div>
+<!-- Rating Highlight Chip -->
+<div class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-lg bg-surface-cream text-saffron-deep font-label-md text-label-md mb-space-lg">
+<div class="flex text-star-gold">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-bold text-charcoal-body">4.8</span>
+<span class="text-charcoal-muted">• Danville's Verified Choice</span>
+</div>
+</div>
+<a class="w-full h-14 bg-surface-container-lowest hover:bg-surface-container-low text-charcoal-body rounded-xl font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-sm shadow-md hover:shadow-lg transition-all active:scale-[0.98]" href="https://www.google.com/search?q=yello+chilli+danville&amp;rlz=1C5CHFA_enIN967IN967&amp;oq=yello+&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgkIARAuGAoYgAQyBggCEEUYOzIGCAMQRRg5MgYIBBBFGDsyBggFEEUYOzIGCAYQRRg9MgYIBxBFGDzSAQgxMzU2ajBqN6gCALACAA&amp;sourceid=chrome&amp;source=chrome.ob&amp;ie=UTF-8#lrd=0x808ff33ea272e7ad:0x7d84fa9052c7e72f,3,,,," rel="noopener noreferrer" target="_blank">
+<span class="">Review us on Google</span>
+<span class="material-symbols-outlined text-[20px] text-google-blue">arrow_outward</span>
+</a>
+</div>
+<!-- Yelp Card -->
+<div class="bg-surface-card rounded-2xl p-space-md sm:p-space-lg shadow-xl shadow-black/[0.04] flex flex-col justify-between relative group hover:shadow-2xl hover:shadow-yelp-red/10 transition-all duration-300">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-yelp-red/10 flex items-center justify-center shadow-inner">
+<!-- Yelp Custom Star Burst Glyph -->
+<svg class="w-7 h-7 text-yelp-red fill-current" viewbox="0 0 24 24">
+<path d="M12 2l1.6 4.9 5.2.1-4.2 3.1 1.6 5-4.2-3.1-4.2 3.1 1.6-5-4.2-3.1 5.2-.1z"></path>
+</svg>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-yelp-red/10 font-label-caps text-label-caps text-yelp-red uppercase font-bold">
+            Foodie Favorite
+          </span>
+</div>
+<div class="mb-space-md">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-headline-sm text-headline-sm text-charcoal-body">Review on Yelp</span>
+</div>
+<p class="font-body-md text-body-md text-charcoal-muted leading-relaxed">
+            Share photos of your craft cocktails, biryanis, and festive dining moments with Bay Area epicureans.
+          </p>
+</div>
+<!-- Foodie Badge Chip -->
+<div class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-lg bg-surface-container-low text-charcoal-body font-label-md text-label-md mb-space-lg">
+<span class="material-symbols-outlined text-[16px] text-yelp-red" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span class="font-bold">The Rose Garden</span>
+<span class="text-charcoal-muted">• Danville Foodies</span>
+</div>
+</div>
+<a class="w-full h-14 bg-yelp-red hover:bg-chili-crimson-deep text-on-error rounded-xl font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-sm shadow-md hover:shadow-lg transition-all active:scale-[0.98]" href="https://www.yelp.com/writeareview/biz/dsG-3UG5_UpcfSs12Ga_PQ?return_url=%2Fbiz%2FdsG-3UG5_UpcfSs12Ga_PQ&amp;review_origin=biz-details-war-button" rel="noopener noreferrer" target="_blank">
+<span class="">Review us on Yelp</span>
+<span class="material-symbols-outlined text-[20px] text-white">arrow_outward</span>
+</a>
+</div>
+</section>
+<!-- Culinary Signature Dish Highlights -->
+<section class="mb-space-md"><div class="bg-surface-cream rounded-2xl p-space-md shadow-sm"><div class="text-center mb-space-sm"><span class="font-label-caps text-label-caps uppercase text-saffron-deep tracking-wider block">Kitchen Artistry</span><h3 class="font-headline-sm text-headline-sm text-charcoal-body">Mention Dishes You Loved</h3><p class="font-body-sm text-body-sm text-charcoal-muted mt-1">Tap to highlight or mention your favorites in your review:</p></div><div class="flex flex-wrap justify-center gap-2" id="dish-tag-selector"><button class="dish-pill transition-all px-3 py-1.5 rounded-full bg-surface-card text-charcoal-body hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md shadow-sm flex items-center gap-1.5 active:scale-[0.98]" data-dish="Lalla Mussa Dal" type="button"><span class="material-symbols-outlined text-[16px] text-saffron-deep pointer-events-none">eco</span><span>Lalla Mussa Dal</span></button><button class="dish-pill transition-all px-3 py-1.5 rounded-full bg-surface-card text-charcoal-body hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md shadow-sm flex items-center gap-1.5 active:scale-[0.98]" data-dish="Murgh Noormahal Biryani" type="button"><span class="material-symbols-outlined text-[16px] text-secondary pointer-events-none">local_fire_department</span><span>Murgh Noormahal Biryani</span></button><button class="dish-pill transition-all px-3 py-1.5 rounded-full bg-surface-card text-charcoal-body hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md shadow-sm flex items-center gap-1.5 active:scale-[0.98]" data-dish="Shahi Tukda" type="button"><span class="material-symbols-outlined text-[16px] text-saffron-bright pointer-events-none">bakery_dining</span><span>Shahi Tukda</span></button><button class="dish-pill transition-all px-3 py-1.5 rounded-full bg-surface-card text-charcoal-body hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md shadow-sm flex items-center gap-1.5 active:scale-[0.98]" data-dish="Nizami Tarkari Biryani" type="button"><span class="material-symbols-outlined text-[16px] text-saffron-deep pointer-events-none">spa</span><span>Nizami Tarkari Biryani</span></button><button class="dish-pill transition-all px-3 py-1.5 rounded-full bg-surface-card text-charcoal-body hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md shadow-sm flex items-center gap-1.5 active:scale-[0.98]" data-dish="Gulab-e-Gulkand" type="button"><span class="material-symbols-outlined text-[16px] text-secondary pointer-events-none">local_florist</span><span>Gulab-e-Gulkand</span></button><button class="dish-pill transition-all px-3 py-1.5 rounded-full bg-surface-card text-charcoal-body hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md shadow-sm flex items-center gap-1.5 active:scale-[0.98]" data-dish="Specialty Craft Cocktails" type="button"><span class="material-symbols-outlined text-[16px] text-tertiary pointer-events-none">local_bar</span><span>Craft Cocktails</span></button></div></div></section>
+<!-- In-Page Direct Feedback / Private Manager Note Form -->
+<!-- Immediate Hospitality Assistance Banner -->
+</div>
+<!-- Inline Interactive Script for Instant QR Diner Responses -->
+<script>
+  (function() {
+    const starButtons = document.querySelectorAll('.star-btn');
+    const feedbackMsg = document.getElementById('rating-feedback-msg');
+    const dishButtons = document.querySelectorAll('.dish-pill');
+    const feedbackNotes = document.getElementById('feedback-notes');
+    let currentRating = 0;
+
+    // Star Selection Logic
+    starButtons.forEach((btn) => {
+      btn.addEventListener('click', function() {
+        const rating = parseInt(this.getAttribute('data-star'), 10);
+        currentRating = rating;
+        updateStars(rating);
+        renderFeedbackPrompt(rating);
+      });
+      
+      btn.addEventListener('mouseenter', function() {
+        const rating = parseInt(this.getAttribute('data-star'), 10);
+        updateStars(rating);
+      });
+    });
+
+    const starContainer = document.getElementById('star-rating-container');
+    if (starContainer) {
+      starContainer.addEventListener('mouseleave', function() {
+        updateStars(currentRating);
+      });
+    }
+
+    function updateStars(rating) {
+      starButtons.forEach(button => {
+        const starValue = parseInt(button.getAttribute('data-star'), 10);
+        const icon = button.querySelector('.material-symbols-outlined');
+        if (icon) {
+          if (starValue <= rating) {
+            icon.classList.remove('text-surface-container-highest');
+            icon.classList.add('text-star-gold');
+            icon.style.fontVariationSettings = "'FILL' 1";
+          } else {
+            icon.classList.remove('text-star-gold');
+            icon.classList.add('text-surface-container-highest');
+            icon.style.fontVariationSettings = "'FILL' 0";
+          }
+        }
+      });
+    }
+
+    function renderFeedbackPrompt(rating) {
+      if (!feedbackMsg) return;
+      if (rating >= 4) {
+        feedbackMsg.innerHTML = `
+          <div class="flex flex-col sm:flex-row items-center gap-2 p-3 bg-surface-cream rounded-xl text-saffron-deep">
+            <span class="material-symbols-outlined text-star-gold" style="font-variation-settings: 'FILL' 1;">celebration</span>
+            <span class="font-label-lg text-label-lg font-bold">Wonderful! Please share your glowing praise on Google or Yelp below!</span>
+          </div>
+        `;
+      } else if (rating > 0) {
+        feedbackMsg.innerHTML = `
+          <div class="flex flex-col sm:flex-row items-center gap-2 p-3 bg-surface-container rounded-xl text-secondary">
+            <span class="material-symbols-outlined">sentiment_dissatisfied</span>
+            <span class="font-label-lg text-label-lg font-bold">We strive for perfection. Please let our General Manager know below how we can make it right.</span>
+          </div>
+        `;
+      }
+    }
+
+    // Dish Click auto-appends to notes
+    dishButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const dishName = this.getAttribute('data-dish');
+        this.classList.toggle('bg-primary-container');
+        this.classList.toggle('text-on-primary-container');
+        
+        if (feedbackNotes && dishName) {
+          const currentText = feedbackNotes.value.trim();
+          if (currentText.includes(dishName)) {
+            // Already there
+          } else {
+            feedbackNotes.value = currentText ? `${currentText}, loved the ${dishName}` : `Loved the ${dishName}`;
+          }
+        }
+      });
+    });
+
+    // Form submit handler
+    window.handleFeedbackSubmit = function() {
+      const banner = document.getElementById('form-success-banner');
+      const submitBtn = document.getElementById('submit-feedback-btn');
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.classList.add('opacity-50', 'pointer-events-none');
+        submitBtn.innerHTML = `<span>Sent with Care</span><span class="material-symbols-outlined text-[18px]">done</span>`;
+      }
+      if (banner) {
+        banner.classList.remove('hidden');
+      }
+    };
+  })();
+</script></div></main>
+</body></html>
